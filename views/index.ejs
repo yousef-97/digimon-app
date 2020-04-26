@@ -12,9 +12,9 @@
         <img src="<%= val.img %> " alt="">
         <p><%= val.level %> </p>
         <form action="/save" method="post">
-            <input type="hidden" value="<% val.name %>">
-            <input type="hidden" value="<%= val.img %>">
-            <input type="hidden" value="<%= val.level %>">
+            <input type="hidden" value="<% val.name %>" name="name">
+            <input type="hidden" value="<%= val.img %>" name="img">
+            <input type="hidden" value="<%= val.level %>" name="level">
             <button>Add To Fav</button>
 
         </form>
