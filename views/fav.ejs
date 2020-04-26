@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <% data.array.forEach(val => {%>
+        <h3><% val.name %> </h3>
+        <img src="<%= val.img %> " alt="">
+        <p><%= val.level %> </p>
+        <a href="/details/<%= val.id %> ">more Details</a>
+
+    <% }); %>
+
+</body>
+
+</html>
